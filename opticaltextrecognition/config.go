@@ -10,12 +10,12 @@ type ConfigurationFile struct {
 }
 
 //NewConfig creates a new configurable file
-func NewConfig(rt, rb, tp, sd, string, lang []string) *ConfigurationFile {
+func NewConfig(rt, rb, tp, sd string, lang []string) *ConfigurationFile {
 	return &ConfigurationFile{
-		ResultTopic: rt,
-		ResultBucket: rb,
-		TranlateTopic: tp,
+		ResultTopic:     rt,
+		ResultBucket:    rb,
+		TranlateTopic:   tp,
 		SentimentalData: sd,
-		Languages: lang
+		Languages:       lang,
 	}
 }
